@@ -1,0 +1,135 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Transição suave para as mudanças */
+}
+
+/* Efeito ao passar o mouse sobre o link */
+header nav ul li a:hover {
+    color: #ff6347; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do link */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 97%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#mensagem{
+    min-height: 250px;
+}
+/* Centralizar o título "Fale Comigo" */
+.titulo-contato {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 1rem; /* Espaçamento inferior para separar do formulário */
+    color: #333; /* Cor do texto */
+    font-size: 1.8rem; /* Tamanho do texto */
+}/* Animação para fazer o texto piscar */
+.piscando {
+    font-weight: bold; /* Deixa o texto em negrito */
+    animation: piscar 1s infinite; /* Define a animação para piscar */
+    text-align: center; /* Centraliza o texto (opcional) */
+    color: #000000
+    
+}
+
+/* Definição da animação */
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Invisível no meio do ciclo */
+    }
+}
+.centralizado {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 1rem; /* Adiciona espaço superior (opcional) */
+    margin-bottom: 1rem; /* Adiciona espaço inferior (opcional) */
+    color: #333; /* Cor do texto (opcional) */
+}
+/* Centraliza a lista */
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Para garantir que as imagens fiquem centralizadas dentro do link */
+a {
+    display: block;
+    text-align: center;
+}
+
+/* Caso queira que as imagens fiquem centralizadas dentro dos itens da lista */
+li {
+    margin: 20px;
+    
+}
+ul li a {
+    text-align: center; /* Alinha o conteúdo dentro do link */
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+}
+
+ul li strong {
+    display: block; /* Garante que o título fique em uma nova linha */
+    margin-top: 10px; /* Espaço entre a imagem e o título */
+    font-weight: bold; /* Confirma que o texto está em negrito */
+}
